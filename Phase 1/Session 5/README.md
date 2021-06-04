@@ -1,4 +1,4 @@
-# Final Result: 99.4% accuracy in 8th epoch with less than 8k parameter.
+# Final Result: 99.4% accuracy with 6.5k parameter.
 
 ## Step 1 : 99.05% Test accuracy on MNIST with 11,604 parameters in 15 epochs
 
@@ -111,7 +111,7 @@ Total Epochs : 15
 1. Here after implementing proper LR scheduler i.e. ReduceLROnPlateau we are able to reach 99.4% even with lesser no of parameter from our previous network.
 2. This model is good but not a great one as though we have reach 99.4% but still it is not consistant and can be pushed further with tuning of LR scheduler parameter. Also, no of total parameter can also be reduced. We will try to address these in next steps to improve our model further.
 
-## Step 3 : 99.43% Test accuracy on MNIST with 7,987 parameters in 8th epoch
+## Step 4 : 99.43% Test accuracy on MNIST with 7,987 parameters in 8th epoch
 
 ### Target:
 
@@ -131,6 +131,7 @@ Total Epochs : 15
 9. Learning Rate: Used Reduce LR On Plateau for maximum achievement.
    - base lr: 0.007
    - patience = 1
+   - factor=0.05
 
 ### Results:
 
@@ -151,3 +152,44 @@ Total Epochs : 15
 1. This is a very good model which can achieve 99.4% accuracy in just 7th epoch with just less than 8k parameter. Also, accuracy is stable in 99.4% from 7th epoch.
 2. We increased learning rate to 0.007 and patience value to 1 because ReduceLROnPlateau will decrease learning by a factor of 0.5 if accuracy reduces once from previous step. This way we are able to reach faster convergence.
 3. Since we reduced the no of parameter a lot it is hard to achieve grater than 99.5% thats why accuracy is oscillating in the range 99.4% - 99.43%.
+
+
+
+## Step 5 : 99.42% Test accuracy on MNIST with 6,577 parameters in 8th epoch
+
+### Target:
+
+1. Further reduced parameter to 6.5k
+
+### Few of the Architectural Considerations :
+
+1. Number of Parameters: **6,577 **
+2. 3x3 Conv Layers = 6
+3. Activation function: ReLU()
+4. Batch Normalization: in each conv block
+5. Dropout : 0.1 after each conv block
+6. 1x1 for transition layer ( to assist Excite and Squeeze ) and for last layer
+7. Maxpool in Transition Block
+8. Global Average Pooling followed by 1x1 instead of FC layer
+9. Learning Rate: Used Reduce LR On Plateau for maximum achievement.
+   - base lr: 0.009
+   - patience = 1
+   - factor=0.04
+
+### Results:
+
+Total Epochs : 15
+
+1. Parameters: **6,577  **
+
+2. Best Train Accuracy: 99.19
+
+3. Best Test Accuracy: 99.42 (15th Epoch)
+
+4. Test accuracy reached 99.42 at 14th Epoch
+
+   <img src="./images/step5.png" width="500"/>
+
+### Analysis:
+
+1. Since we reduced no of parameter further to 6.5k achieved 99.42% accuracy in 13th epoch instead of 7th epoch.
