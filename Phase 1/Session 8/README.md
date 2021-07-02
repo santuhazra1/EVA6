@@ -163,3 +163,7 @@ Test Set: Loss=0.38401458346391026, Batch_id=78, Test Accuracy=87.34: 100%|â–ˆâ–
 
 - From results we can see using layer norm model converges slowly than using batch norm.
 - From missclassified gradcam images we can conclude more different data augmentation strategy needed to increase test accuracy
+
+
+
+[Notebook Link](!CIFAR10_Classification_S8.ipynb)
