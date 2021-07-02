@@ -166,4 +166,4 @@ Test Set: Loss=0.38401458346391026, Batch_id=78, Test Accuracy=87.34: 100%|â–ˆâ–
 
 
 
-[Notebook Link](!CIFAR10_Classification_S8.ipynb)
+[Notebook Link](!Phase 1/Session 8/CIFAR10_Classification_S8.ipynb)
