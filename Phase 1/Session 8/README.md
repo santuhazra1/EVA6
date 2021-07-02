@@ -1,5 +1,5 @@
 # CIFAR10-S8
-[Notebook Link](!https://github.com/santuhazra1/EVA6/blob/a79bb9470ceadaf907c0af681b46b6c0e61396a1/Phase%201/Session%208/CIFAR10_Classification_S8.ipynb)
+[Notebook Link](https://github.com/santuhazra1/EVA6/blob/a79bb9470ceadaf907c0af681b46b6c0e61396a1/Phase%201/Session%208/CIFAR10_Classification_S8.ipynb)
 ## Target:
 
 - Train deep learning repo training for 40 epoch
