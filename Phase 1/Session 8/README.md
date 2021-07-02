@@ -96,7 +96,7 @@ Estimated Total Size (MB): 53.89
 ## Results
 
 1. Validation accuracy
-    -  `87.10% in 75 epochs`
+    -  `87.34% in 40 epochs`
 2.  Loss, Accuracy Plots
 ![Loss, Accuracy Plots](images/loss_accuracy_curve.png)
 ## Training Logs
