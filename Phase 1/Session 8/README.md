@@ -1,5 +1,5 @@
 # CIFAR10-S8
-
+[Notebook Link](!https://github.com/santuhazra1/EVA6/blob/a79bb9470ceadaf907c0af681b46b6c0e61396a1/Phase%201/Session%208/CIFAR10_Classification_S8.ipynb)
 ## Target:
 
 - Train deep learning repo training for 40 epoch
@@ -164,6 +164,3 @@ Test Set: Loss=0.38401458346391026, Batch_id=78, Test Accuracy=87.34: 100%|â–ˆâ–
 - From results we can see using layer norm model converges slowly than using batch norm.
 - From missclassified gradcam images we can conclude more different data augmentation strategy needed to increase test accuracy
 
-
-
-[Notebook Link](!Phase 1/Session 8/CIFAR10_Classification_S8.ipynb)
